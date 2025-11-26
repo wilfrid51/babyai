@@ -3,9 +3,10 @@
 ## Setup
 
 ``` sh
-conda create --name agentenv-babyai
-conda activate agentenv-babyai
-pip install -e .
+python3 -m venv .venv
+source .venv/bin/activate
+pip install uv
+uv sync
 ```
 
 ## Launch
